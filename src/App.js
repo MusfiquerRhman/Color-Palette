@@ -1,6 +1,7 @@
 import './App.css';
 import Pallate from './pallate';
 import seedColors from './seedcolors';
+import {GeneratePalette} from "./colorHelpers";
 
 function App() {
   return (
