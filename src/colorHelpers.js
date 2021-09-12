@@ -19,9 +19,9 @@ function generatePalette(starterPalette) {
       newPalette.colors[levels[i]].push({
         name: `${color.name} ${levels[i]}`,
         id: color.name.toLowerCase().replace(/ /g, "-"),
-        hex: scale[i],
-        rgb: chroma(scale[i]).css(),
-        rgba: chroma(scale[i]).css().replace("rgb", "rgba").replace(")", ",1.0)")
+        HEX: scale[i],
+        RGB: chroma(scale[i]).css(),
+        RGBA: chroma(scale[i]).css().replace("rgb", "rgba").replace(")", ",1.0)")
       });
     }
   }
