@@ -5,15 +5,15 @@ import {withStyles} from "@material-ui/styles"
 const style = {
     root: {
         backgroundColor: "teal",
-        height: "100%",
+        height: "100vh",
         display: "flex",
-        alignItem: "flex-start",
+        alignItems: "flex-start",
         justifyContent: "center"
     }, 
     container: {
         width: "50%",
         display: "flex",
-        alignItem: "flex-start",
+        alignItems: "flex-start",
         flexDirection: "column",
         flexWrap : "wrap"
     },
