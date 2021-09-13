@@ -40,17 +40,19 @@ export default class navbar extends Component {
                 <div className="logo">
                     <Link to="/">React Color Picker</Link>
                 </div>
-                <div className="slider-container">
-                    <span>Darkness Level: {level} </span>
-                    <div className="slider">
-                        <Slider defaultValue={level}
-                            min={100} 
-                            max={900} 
-                            step={100}
-                            onAfterChange={changeLevel}
-                        />
+                {this.props.showSlider && (
+                    <div className="slider-container">
+                        <span>Darkness Level: {level} </span>
+                        <div className="slider">
+                            <Slider defaultValue={level}
+                                min={100} 
+                                max={900} 
+                                step={100}
+                                onAfterChange={changeLevel}
+                            />
+                        </div>
                     </div>
-                </div>
+                )}
                 <div className="select-container">
                     <Select value={format} onChange={this.handleChange}>
                         <MenuItem value="HEX">HEX - #FFFFFF</MenuItem>
